@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "mbl.is cleanup",
+  "description": "Þetta extention eyðir út stóru auglýsingunni á mbl.is.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://mbl.is/*","http://www.mbl.is/*"],
+      "js": ["jquery.js","cleanup.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
